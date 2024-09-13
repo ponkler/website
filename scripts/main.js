@@ -1,10 +1,15 @@
-const rngButton = document.querySelector('#rng-button');
-const rngDisplay = document.querySelector('#random-number');
+const rngButton = document.getElementById('rng-button');
+const rngDisplay = document.getElementById('random-number');
 
-//rngButton.textContent = "Test";
+function getRandomNumber() {
+    return Math.random();
+}
 
-console.log("Test");
+rngButton.addEventListener("click", function() {
+    let num = Math.round(getRandomNumber() * 1000000)
+    rngDisplay.textContent = numberWithCommas(num);
+});
 
-function rng() {
-    console.log(Math.random());
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

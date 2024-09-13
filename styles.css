@@ -50,11 +50,11 @@
     z-index: -100;
 }
 
-.rng-button {
+#rng-button {
     width: 200px;
     height: 80px;
     background-color: #222222;
-    top: 30%;
+    top: 400px;
     position: relative;
     display: block;
     margin: auto;
@@ -62,14 +62,18 @@
     border-radius: 60px;
     font-size: 16px;
     color:white;
+    cursor: pointer;
 }
 
-.random-number {
+#random-number {
     color: white;
-    font-size: 16px;
-    top: 35%;
+    font-size: 24px;
+    top: 420px;
     position: relative;
+    display: block;
     margin: auto;
+    text-align: center;
+    text-shadow: black;
 }
 
 #content-gradient {
